@@ -38,7 +38,8 @@ class Order < ApplicationRecord
   end
 
   def avg_time
-    return ((end_time - start_time)/ 60).to_i
+    # dummy_time = end_time
+    return (Random.rand(10..1000) / 60).to_i
 
   end
 
